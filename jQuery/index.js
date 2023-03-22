@@ -1,0 +1,10 @@
+$("h1").css("color","white");
+$(document).click(function(event){
+  $("button").fadeToggle();
+})
+$(document).keydown(function(event){
+  $("h1").slideUp().fadeToggle();
+  console.log(event.key);
+  $("h1").append("<div></div>");
+  $("div").text(event.key);
+})
